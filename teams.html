@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madden Hub | Best Teams</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Madden Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="teams.html">Best Teams</a>
+      <a href="schemes.html">Schemes</a>
+      <a href="franchise.html">Franchise</a>
+      <a href="ultimate.html">Ultimate Team</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="intro">
+      <h2>Best Teams to Use</h2>
+      <p>
+        This page helps Madden players choose a team based on play style.
+        Click a team below to see strengths, weaknesses, play style, and recommendations.
+      </p>
+    </section>
+
+    <section class="team-grid">
+      <button onclick="showTeam('chiefs')">Kansas City Chiefs</button>
+      <button onclick="showTeam('ravens')">Baltimore Ravens</button>
+      <button onclick="showTeam('eagles')">Philadelphia Eagles</button>
+      <button onclick="showTeam('niners')">San Francisco 49ers</button>
+      <button onclick="showTeam('dolphins')">Miami Dolphins</button>
+      <button onclick="showTeam('cowboys')">Dallas Cowboys</button>
+      <button onclick="showTeam('bills')">Buffalo Bills</button>
+      <button onclick="showTeam('lions')">Detroit Lions</button>
+    </section>
+
+    <section id="team-info" class="team-info">
+      <h2>Select a Team</h2>
+      <p>Team information will appear here after you click a team.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Madden Hub | ICS-200 Final Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

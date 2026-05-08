@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plays & Schemes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <h1>Madden 26 Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="teams.html">Best Teams</a>
+      <a href="franchise.html">Franchise</a>
+      <a href="ultimate.html">Ultimate Team</a>
+      <a href="plays.html">Plays & Schemes</a>
+    </nav>
+    <button onclick="toggleDarkMode()" class="small-btn">Toggle Theme</button>
+  </div>
+</header>
+
+<main>
+  <section class="page-title">
+    <h2>Best Plays & Schemes</h2>
+    <p>This page helps players choose offense and defense based on the situation.</p>
+  </section>
+
+  <section class="tool">
+    <h3>Scheme Finder Tool</h3>
+    <p>Select what you need, and the website will recommend a strategy.</p>
+
+    <label for="side">Offense or Defense:</label>
+    <select id="side">
+      <option value="offense">Offense</option>
+      <option value="defense">Defense</option>
+    </select>
+
+    <label for="goal">Situation:</label>
+    <select id="goal">
+      <option value="deep">Deep Pass / Stop Deep Pass</option>
+      <option value="run">Run Game / Stop Run</option>
+      <option value="redzone">Red Zone</option>
+      <option value="balanced">Balanced</option>
+    </select>
+
+    <button onclick="findScheme()">Find Scheme</button>
+    <div id="schemeResult" class="result">Your recommendation will appear here.</div>
+  </section>
+
+  <section class="grid section">
+    <div class="card">
+      <h3>Offensive Schemes</h3>
+      <p><strong>Spread Offense:</strong> Good for open space, quick passes, deep routes, and mismatches.</p>
+      <p><strong>West Coast:</strong> Good for short passes, safe throws, slants, drags, and consistent drives.</p>
+      <p><strong>Run Heavy:</strong> Good for controlling the clock and forcing the defense to respect the run.</p>
+    </div>
+
+    <div class="card">
+      <h3>Defensive Schemes</h3>
+      <p><strong>Nickel Zone:</strong> Good for stopping deep passes and covering multiple receivers.</p>
+      <p><strong>Man Blitz:</strong> Good for pressure, but risky if your corners cannot cover.</p>
+      <p><strong>Run Stop:</strong> Good for short yardage and goal line defense.</p>
+    </div>
+  </section>
+
+  <section class="section info-box">
+    <h3>Useful Play Situations</h3>
+    <ul>
+      <li><strong>One-play touchdown:</strong> Look for deep crossers, streak routes, wheel routes, and play action shots.</li>
+      <li><strong>Third down conversion:</strong> Use mesh, slants, corner routes, and safe checkdowns.</li>
+      <li><strong>Red zone offense:</strong> Use quick passes, inside runs, and routes that attack the sidelines.</li>
+      <li><strong>Stop deep passes:</strong> Use Cover 3, Cover 4, and keep safety help over the top.</li>
+      <li><strong>Stop the run:</strong> Use heavier fronts, pinch the defensive line, and user-control a linebacker.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Madden 26 Hub | ICS 200 Final Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
